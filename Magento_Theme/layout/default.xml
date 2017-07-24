@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+      <referenceBlock name="footer_links" remove="true" />
+      <referenceBlock name="report.bugs" remove="true" />
+      <referenceBlock name="store.settings" remove="true" />
+      <referenceBlock name="store_language" remove="true" />
+      <referenceBlock name="store_switcher" remove="true" />
+    </body>
+</page>

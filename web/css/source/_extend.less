@@ -1,0 +1,177 @@
+
+.sociallinks {
+   float: right;
+}
+
+.socialicons {
+	margin:-10px 0px -10px 0px;
+	width:30px;
+	height:30px;
+}
+
+// define colors :
+@dd-orange: #EF673E;
+@dd-green: #95c9c4;
+@dd-green2: #c0cc80;
+@dd-white: white;
+@dd-gray: #d1d1d1;
+
+@bb-pink: #FC8589;
+@bb-pink2: #FAB8C2;
+@bb-yellow: #FDEA8E;
+@bb-yellow2: #f9eea8A;
+@bb-yellow3: #fff8d7;
+@bb-blue: #7FCAF2;
+@bb-green: #B5E1B0;
+
+@color-blue2: #FFCD46; 
+@color-gray90: @bb-yellow3;
+@color-orange-red1: @dd-green;
+@color-yellow-light1: @bb-green;
+@color-gray-middle3: @dd-green;
+
+// text color:
+@primary__color: #333333;
+
+// Link colors:
+@link__color: @dd-orange;
+@link__hover__color: @dd-orange;
+@link__visited__color: @color-orange-red1;
+
+// buttons:
+@button__color: @dd-white; 
+@button__background: @dd-orange;
+@button__border: 1px solid @dd-orange;
+
+
+// site colors:
+@navigation__background: @dd-orange;
+@submenu-desktop-item__hover__background: @dd-orange;
+
+
+@subment-item__active__border-color: black;
+
+@navigation-level0-item__active__border-color: @bb-pink2;
+@submenu-item__active__border-color: @bb-pink2;
+@navigation-desktop-level0-item__active__border-color: @bb-pink2;
+@submenu-desktop-item__active__border-color: @bb-pink2;
+
+
+@copyright__background-color: @dd-orange;
+
+// Messages:
+@message-success__background: @bb-green;
+@message-info__background: @bb-green;
+@message-warning__background: @bb-green;
+
+
+// buttons:
+.action {
+        &.primary {
+                background-color: @dd-orange;
+                border-color: @dd-orange;
+        }
+}
+
+
+//Logo:
+.header.content {
+    padding: 10px 20px 0;
+}
+
+@media (min-width: 768px) {
+        .checkout-cart-index, .cms-home,
+        .page-layout-2columns-left, .page-layout-1column  {
+                        max-width: none;
+                & .logo {
+                        margin: -51px auto 0px 60px;
+                }
+        }
+        .page-header {
+                background-image: url('@{baseDir}images/header-background.png');
+        }
+}
+
+// checkout page. Classes: checkout-index-index page-layout-checkout
+.page-layout-checkout .logo {
+  		margin: 0px auto 10px 0;
+}
+
+// Shopping card hack, disable region
+
+[name="shippingAddress.region"] {
+        display: none;
+}
+
+// Other:
+.minicart-wrapper .action.showcart .counter.qty {
+	background: @dd-orange;
+}
+
+//.modes-mode {
+//	background-color: @dd-orange;
+//}
+
+//.modes-mode.active {
+//	background: @bb-yellow3;
+//}
+
+//.toolbar select {
+//	    background-color: @dd-orange;
+//}
+
+
+// Mobile version:
+@media (max-width: 767px) {
+        .nav-sections-item-title.active {
+                border: solid;
+                border-width: 0px 0px 0px 0px;
+                border-color: @dd-gray;
+		border-bottom: 3px solid @dd-gray;
+                background: @dd-orange;
+        }
+
+        .nav-sections-item-title {
+                border-width: 0px 0px 0px 0px;
+                background: @dd-orange;
+        }
+
+        .nav-sections-item-switch {
+                color: @dd-white;
+        }
+
+        .nav-sections-item-switch:hover {
+                color: @bb-yellow;
+        }
+
+        .nav-sections-item-switch:active {
+                color: @bb-yellow;
+        }
+
+	.logo {
+		margin: 0px 0px 10px 90px;
+	}
+
+	.logo img {
+		content:url('@{baseDir}images/doeppiedee-header-02.png');
+	}
+
+        a, .alink {
+                color: @dd-orange;
+        }
+
+        .header.content {
+                background: @dd-green;
+        }
+
+	.doeppiedee-widget1 {
+		display: none;
+	}
+}
+
+
+
+/*
+lib/web/css/source/lib/variables/_messages.less
+*/
+
